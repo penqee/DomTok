@@ -180,17 +180,17 @@ struct UpdateSpuResp {
 * @Param minCost 最小花费
 * @Param maxCost 最大花费
 * @Param IsShipping 是否免运费
-* @Param SpuID Spu对应ID
+* @Param userID 卖家ID
 */
 struct ViewSpuReq {
     1: optional string keyWord;
     2: optional i64 categoryID;
-    3: optional i64 spuID;
-    4: optional double minCost;
-    5: optional double maxCost;
-    6: optional bool isShipping;
-    7: optional i64 pageNum;
-    8: optional i64 pageSize;
+    3: optional double minCost;
+    4: optional double maxCost;
+    5: optional bool isShipping;
+    6: optional i64 pageNum;
+    7: optional i64 pageSize;
+    8: optional i64 userID;
 }
 
 struct ViewSpuResp {
